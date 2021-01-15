@@ -21,10 +21,14 @@ header {
     margin: 0 20px;
 }
 h1 {
+    height: 210px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    border: 3px solid #ffffff;
+    font-size: 45px;
+    border: 2px solid #ffffff;
     color: #ffffff;
+    text-transform: uppercase;
+    padding: 3% 3%;
 }
 h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -36,7 +40,19 @@ h3 {
     font-weight: 300;
     font-size: 25px;
     color: #ffffff;
-    top: 60%;
+    top: 50%;
+    text-transform: uppercase;
+}
+button {
+    height: 30px;
+    width: 130px;
+    border: 1px black solid;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Alata';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #ffffff;
 }
 
 /* Header Styles */
@@ -95,4 +111,24 @@ h3 {
 .fisheye {
     background-image: url('images/mobile/image-fisheye.jpg');
     background-size: cover;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: hsl(0, 0%, 0%);
+}
+.footer-img {
+    color: #ffffff;
+}
+.footer ul {
+    list-style-type: none;
+}
+li {
+    color: #ffffff;
+}
+p {
+    color: #7a7a7a;
+}
+footer {
+    display: none;
 }
