@@ -13,6 +13,7 @@
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -25,18 +26,17 @@
       <div class="content-container">
         <img class="header-logo" src="images/logo.svg" alt="Logo">
 
-        <nav>
-          <ul class="header-menu">
-            <li class="header-menu-link">About</li>
-            <li class="header-menu-link">Careers</li>
-            <li class="header-menu-link">Events</li>
-            <li class="header-menu-link">Products</li>
-            <li class="header-menu-link">Support</li>
+        <button class="hamburger-icon"></button>
+        <nav class="header-menu">
+          <ul >
+            <li><a class="header-menu-link" href="#">About</a></li>
+            <li><a class="header-menu-link" href="#">Careers</a></li>
+            <li><a class="header-menu-link" href="#">Events</a></li>
+            <li><a class="header-menu-link" href="#">Products</a></li>
+            <li><a class="header-menu-link" href="#">Support</a></li>
           </ul>
         </nav>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img class="hamburger-icon" src="images/icon-hamburger.svg">
-        </a>
+        
 
         <h1>Immersive experiences that deliver</h1>
       </div>
@@ -97,17 +97,17 @@
           </div>
         </div>
       </div>
-
+    </div>
     <footer>
       <div class="content-container">
         <div class="footer-container-1">
           <img class="footer-img" src="images/logo.svg">
-          <ul>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
+          <ul class="footer-nav">
+            <li class="footer-link">About</li>
+            <li class="footer-link">Careers</li>
+            <li class="footer-link">Events</li>
+            <li class="footer-link">Products</li>
+            <li class="footer-link">Support</li>
           </ul>
         </div>
 
@@ -118,7 +118,7 @@
             <img class="footer-img-social" src="images/icon-pinterest.svg">
             <img class="footer-img-social" src="images/icon-instagram.svg">
           </div>
-          <p>© 2021 Loopstudios. All rights reserved.</p>
+          <p class="footer-copyright">© 2021 Loopstudios. All rights reserved.</p>
         </div>
       </div>
     </footer> 
@@ -130,6 +130,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </div>
+  <script src="main.js"></script>
 
 </body>
 </html>

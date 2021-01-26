@@ -34,7 +34,7 @@ h2 {
     text-transform: uppercase;
 }
 li:hover {
-    border-bottom: 1px solid white;  
+    border-bottom: 1px solid white; 
 }
 
 /* Header Styles */
@@ -43,21 +43,45 @@ li:hover {
     width: 150px;
     margin-top: 40px;
 }
+.hamburger-icon {
+    display: block;
+    position: absolute;
+    top: 47px;
+    right: 25px;
+    width: 25px;
+    height: 14px;
+    z-index: 100;
+    border: none;
+    cursor: pointer;
+    background-image: url('images/icon-hamburger.svg');
+    background-color: transparent;
+    background-size: 20px;
+}
+.showClose {
+    background-image: url('images/icon-close.svg');
+}
 .header-menu {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+}
+.showNav {
+    transform: translateY(0);
 }
 .header-menu li {
     display: block;
     text-decoration: none;
     padding: 14px 16px;
 }
-.hamburger-icon {
-    display: block;
-    position: absolute;
-    top: 45px;
-    right: 20px;
-}
-/* Content Section 1 Styles */
+
+/* Section 1 Styles */
 .content-sec1 {
     height: 700px;
 }
@@ -77,17 +101,40 @@ li:hover {
     margin-top: 20px;
 }
 
-/* Content Section 2 Styles */
+/* Section 2 Styles */
+
+/* Section 2 Global Styles*/
 .content-sec2 {
-    height: 1150px;
+    height: 1125px;
 }
 .sec2-header {
     text-align: center;
     padding-bottom: 25px;
 }
+
+/* Section 2 card styles */
 .card {
     height: 100px;
     margin: 15px 0;
+}
+.card-header {
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 15px;
+    background-color: rgba(0,0,0,0.1);
+    border-right:  rgba(0,0,0,0.1);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: none;
+}
+.card-header:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: black;
 }
 .deep-earth {
     background-image: url('images/mobile/image-deep-earth.jpg');
@@ -121,25 +168,9 @@ li:hover {
     background-image: url('images/mobile/image-fisheye.jpg');
     background-size: cover;
 }
-.card-header {
-    height: 100%;
-    width: 100%;
-    padding-left: 15px;
-    padding-top: 15px;
-    background-color: rgba(0,0,0,0.1);
-    border-right:  rgba(0,0,0,0.1);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    text-align: left;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-bottom: none;
-}
-.card-header:hover {
-    background-color: rgba(255,255,255,0.5);
-    color: black;
-}
+
+
+/* Section 2 Button Styles */
 .sec2-button-container {
     display: flex;
     align-items: center;
@@ -164,6 +195,8 @@ li:hover {
 }
 
 /* Footer Styles */
+
+/* Footer Global Styles */
 footer {
     background-color: hsl(0, 0%, 0%);
     height: 375px;
@@ -174,23 +207,27 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.footer-img {
-    color: #ffffff;
-    margin-top: 30px;
-}
-footer ul {
-    list-style-type: none;
-    margin-top: 20px;
-}
-li {
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 10px;
-}
 .footer-container-2 {
     display: inline-block;
     width: 100%;
 }
+
+/* Footer Content 1 Styles */
+.footer-img {
+    color: #ffffff;
+    margin-top: 30px;
+}
+.footer-nav {
+    list-style-type: none;
+    margin-top: 20px;
+}
+.footer-link {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Footer Content 2 Styles */
 .footer-img-social-container {
     margin-top: 20px;
     margin-left: 30%;
@@ -198,11 +235,13 @@ li {
 .footer-img-social {
     margin-left: 5px;
 }
-p {
+.footer-copyright {
     color: #7a7a7a;
     text-align: center;
     margin-top: 10px;
 }
+
+/* FrontendMentor Disclaimer */
 .attribution {
     display: none;
 }
